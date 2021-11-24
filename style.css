@@ -1,0 +1,128 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: url(assets/medias/stacked-waves-haikei.svg) no-repeat center;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . ."
+      ". . . . . . ."
+      ". . . . . . ."
+      ". . . . . . ."
+      ". . . . . . ."
+      ". . . . . . ."
+      ". . . . . . .";
+      height: 800px;
+      width: 800px;
+  }
+  
+.island{
+    background: url(assets/medias/blob-haikei.svg) no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.islandZoom{
+    transform: scale(8) translateX(0);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform-origin: 0 0;
+}
+
+#islandContainer{
+    width: 800px;
+    padding: 10px;
+    padding-bottom: 100px;
+}
+
+#islandName{
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#islandCoord{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+
+.itemIcon{
+    max-height: 70px;
+    cursor: pointer;
+    filter: brightness(20%);
+
+}
+
+.itemSelected{
+    filter: brightness(100%);
+}
+
+#itemsContainer{
+    width: 1000px;
+}
+
+#main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#specialItems{
+    width: 250px;
+    height: 250px;
+    float: right;
+}
+
+
+#triforce>img{
+    position: relative;
+}
+
+#shard8{
+    left: 10px;
+    top: -140px;
+}
+
+#shard1{
+    top: 40px;
+    left: 60px;
+}
+
+#shard5{
+    left: 12px;
+    top: -20px;
+}
+
+#shard4{
+    left: 112px;
+    top: -15px;
+}
+
+#shard3{
+    left: -95px;
+    top: 80px;
+}
+
+#shard2{
+    top: 105px;
+    left: -43px;
+}
+
+#shard6{
+    top: 33px;
+    left: -60px;
+}
+
+#shard7{
+    top: -43px;
+    left: 137px;
+}
