@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     background: url(assets/medias/stacked-waves-haikei.svg) no-repeat center;
@@ -12,25 +12,25 @@ body{
     gap: 2px 2px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". . . . . . ."
-      ". . . . . . ."
-      ". . . . . . ."
-      ". . . . . . ."
-      ". . . . . . ."
-      ". . . . . . ."
-      ". . . . . . .";
-      height: 800px;
-      width: 800px;
-  }
-  
-.island{
-    background: url(assets/medias/blob-haikei.svg) no-repeat center;
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . . . . . .";
+    height: 600px;
+    width: 600px;
+}
+
+.island {
+    background-color: #005799;
     background-size: contain;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
 
-.islandZoom{
+.islandZoom {
     transform: scale(8) translateX(0);
     position: absolute;
     width: 100px;
@@ -38,91 +38,119 @@ body{
     transform-origin: 0 0;
 }
 
-#islandContainer{
-    width: 800px;
+#islandContainer {
+    width: 600px;
     padding: 10px;
     padding-bottom: 100px;
+    background-color: #fbaf3c94;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
-#islandName{
+#islandName {
     padding: 0;
     margin: 0;
     font-size: 1.5em;
 }
 
-#islandCoord{
+#islandCoord {
     padding: 0;
     margin: 0;
     font-size: 1em;
 }
 
-.itemIcon{
+.itemIcon {
     max-height: 70px;
     cursor: pointer;
     filter: brightness(20%);
 
 }
 
-.itemSelected{
+.itemSelected {
     filter: brightness(100%);
 }
 
-#itemsContainer{
+#itemsContainer {
     width: 1000px;
 }
 
-#main{
+#main {
     display: flex;
     justify-content: space-between;
 }
 
-#specialItems{
+#specialItems {
     width: 250px;
     height: 250px;
     float: right;
 }
 
 
-#triforce>img{
+#triforce>img {
     position: relative;
 }
 
-#shard8{
+#shard8 {
     left: 10px;
     top: -140px;
+    -webkit-clip-path: polygon(46% 10%, 18% 60%, 41% 70%, 59% 86%, 73% 91%, 88% 71%);
+    clip-path: polygon(46% 10%, 18% 60%, 41% 70%, 59% 86%, 73% 91%, 88% 71%);
 }
 
-#shard1{
+#shard1 {
     top: 40px;
     left: 60px;
+    -webkit-clip-path: polygon(59% 19%, 48% 21%, 23% 63%, 23% 74%, 30% 82%, 38% 80%, 53% 82%, 72% 78%, 75% 52%, 72% 29%);
+    clip-path: polygon(59% 19%, 48% 21%, 23% 63%, 23% 74%, 30% 82%, 38% 80%, 53% 82%, 72% 78%, 75% 52%, 72% 29%);
 }
 
-#shard5{
+#shard5 {
     left: 12px;
     top: -20px;
+    -webkit-clip-path: polygon(36% 6%, 40% 92%, 64% 90%, 62% 32%);
+    clip-path: polygon(36% 6%, 40% 92%, 64% 90%, 62% 32%);
 }
 
-#shard4{
+#shard4 {
     left: 112px;
     top: -15px;
+    -webkit-clip-path: polygon(55% 18%, 31% 20%, 30% 80%, 78% 82%, 83% 66%);
+    clip-path: polygon(55% 18%, 31% 20%, 30% 80%, 78% 82%, 83% 66%);
 }
 
-#shard3{
+#shard3 {
     left: -95px;
     top: 80px;
+    -webkit-clip-path: polygon(72% 22%, 25% 23%, 18% 42%, 39% 67%, 61% 85%, 80% 58%, 80% 30%);
+    clip-path: polygon(72% 22%, 25% 23%, 18% 42%, 39% 67%, 61% 85%, 80% 58%, 80% 30%);
 }
 
-#shard2{
+#shard2 {
     top: 105px;
     left: -43px;
+    -webkit-clip-path: polygon(48% 10%, 9% 84%, 83% 83%, 92% 59%);
+    clip-path: polygon(48% 10%, 9% 84%, 83% 83%, 92% 59%);
 }
 
-#shard6{
+#shard6 {
     top: 33px;
     left: -60px;
+    -webkit-clip-path: polygon(89% 22%, 32% 22%, 5% 78%, 72% 76%, 97% 30%);
+    clip-path: polygon(89% 22%, 32% 22%, 5% 78%, 72% 76%, 97% 30%);
 }
 
-#shard7{
+#shard7 {
     top: -43px;
     left: 137px;
+    -webkit-clip-path: polygon(51% 14%, 19% 46%, 21% 82%, 86% 79%);
+    clip-path: polygon(51% 14%, 19% 46%, 21% 82%, 86% 79%);
+}
+
+#tog{
+    max-width: 40%;
+    max-height: 40%;
+    position: relative;
+    top: 20%;
+    left: 30%;
+    opacity: 0;
 }
