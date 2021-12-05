@@ -1,7 +1,7 @@
 # windwaker-map-js
 
 This project is an interactive tool for The Legend of Zelda: The Wind Waker. It features a complete map of the game and every major items (this excludes trading items for now).
-The map changes depending on user actions: the user can check islands he completed or chest he opened; and, for example, Tower of The Gods will appear on the map when every Goddess Pearl is acquired.
+The map changes depending on user actions: the user can check islands he completed or chests he opened; and, for example, Tower of The Gods will appear on the map when every Goddess Pearl is acquired.
 This project is designed to be useful during randomizer runs, allowing you to keep track of your game completion.
 
 ## Planned features
